@@ -1,0 +1,235 @@
+/* Reset css-a */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #232323;
+  font-family: "Nunito", sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  padding: 20px 25px;
+  position: relative;
+  height: 100vh;
+  background: rgb(232, 214, 46);
+  background: -moz-linear-gradient(
+    20deg,
+    rgba(232, 214, 46, 1) 0%,
+    rgba(211, 45, 165, 1) 53%,
+    rgba(149, 43, 233, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    20deg,
+    rgba(232, 214, 46, 1) 0%,
+    rgba(211, 45, 165, 1) 53%,
+    rgba(149, 43, 233, 1) 100%
+  );
+  background: linear-gradient(
+    20deg,
+    rgba(232, 214, 46, 1) 0%,
+    rgba(211, 45, 165, 1) 53%,
+    rgba(149, 43, 233, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e8d62e",endColorstr="#952be9",GradientType=1);
+}
+
+.navigation-logo {
+  font-size: 32px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.navigation-bar {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-bar--middle {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  transition: all 0.4s;
+}
+
+.navigation-bar--middle::before,
+.navigation-bar--middle::after {
+  position: absolute;
+  content: "";
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.4s;
+}
+
+.navigation-bar--middle::after {
+  top: 10px;
+}
+
+.header-content {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 25px;
+  text-align: center;
+}
+
+.header-content-title {
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.header-content-description {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 75px;
+}
+
+.header-content-btn {
+  width: 150px;
+  height: 40px;
+  background-color: #ededed;
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header-content-btn a {
+  color: #353535;
+  font-size: 14px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.navigation-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: all 0.8s cubic-bezier(0.44, 0.13, 0.46, 0.86);
+  z-index: 90;
+  transform: scale(0);
+}
+
+.navigation-bar.active .navigation-circle {
+  background-color: #ededed;
+  transform: scale(40);
+}
+
+.navigation-open {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 90;
+  transition: all 0.3s 0.1s;
+}
+
+.navigation-open .navigation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  align-items: center;
+  opacity: 0;
+  transition: all 1s 0.25s;
+}
+
+.navigation.active .navigation-list {
+  opacity: 1;
+}
+
+.navigation-open .navigation-list .navigation-link {
+  color: #4e4e4e;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.navigation.active .navigation-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 45px;
+  height: 45px;
+}
+
+.close-btn .close-btn-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 30px;
+  height: 2px;
+  background-color: #353535;
+}
+
+.close-btn .close-btn-line--2 {
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+/* Responsywność */
+
+@media (375px <= width) {
+  .header-content-title {
+    font-size: 32px;
+  }
+  .header-content-description {
+    font-size: 18px;
+  }
+  .header-content-btn {
+    width: 180px;
+    height: 45px;
+  }
+  .header-content-btn a {
+    font-size: 18px;
+  }
+}
