@@ -15,9 +15,14 @@ ul {
 }
 
 body {
-  min-height: 100vh;
+  min-height: 200vh;
   background-color: #232323;
   font-family: "Nunito", sans-serif;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .header {
@@ -216,6 +221,10 @@ body {
   transform: translate(-50%, -50%) rotate(135deg);
 }
 
+.header img {
+  display: none;
+}
+
 /* Responsywność */
 
 @media (375px <= width) {
@@ -228,6 +237,8 @@ body {
   .header-content-btn {
     width: 180px;
     height: 45px;
+    transition: all 0.4s;
+    cursor: pointer;
   }
   .header-content-btn a {
     font-size: 18px;
@@ -256,5 +267,198 @@ body {
   }
   .navigation-bar.active .navigation-circle {
     transform: scale(53);
+  }
+}
+
+@media (992px <= width) {
+  .header-content-title {
+    font-size: 60px;
+  }
+  .header {
+    padding: 20px 50px;
+  }
+
+  .navigation-bar {
+    display: none;
+  }
+  .navigation-open {
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    display: block;
+    padding-top: 10px;
+    height: 50px;
+  }
+
+  .navigation-logo {
+    height: 50px;
+  }
+  .navigation-open .navigation-list {
+    opacity: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .navigation-open .navigation-list .navigation-link {
+    color: #fff;
+    font-size: 22px;
+  }
+  .close-btn {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+  }
+  .header-content {
+    max-width: 800px;
+  }
+  .header-content-description {
+    font-size: 25px;
+  }
+  .header-content-btn {
+    width: 200px;
+    height: 55px;
+  }
+}
+
+@media (1200px <= width) {
+  .navigation-open {
+    padding-top: 0;
+  }
+  .header img {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .header-content {
+    text-align: left;
+    max-width: 800px;
+    left: 0;
+    top: 200px;
+    transform: translate(0, 0);
+    padding: 0 45px;
+  }
+  .header-content-btn {
+    margin: 0;
+  }
+  .header img {
+    right: -200px;
+    width: 650px;
+  }
+  .header-content-title {
+    font-size: 64px;
+    margin-bottom: 20px;
+  }
+  .header-content-description {
+    font-size: 24px;
+    max-width: 650px;
+    margin-bottom: 55px;
+  }
+  .header-content-btn {
+    width: 220px;
+    gap: 20px;
+  }
+  .header-content-btn a {
+    font-size: 22px;
+  }
+
+  .navigation-open .navigation-list {
+    gap: 70px;
+  }
+
+  .header {
+    padding: 30px 45px;
+    background: rgb(232, 214, 46);
+    background: -moz-linear-gradient(
+      20deg,
+      rgba(232, 214, 46, 1) 10%,
+      rgba(211, 45, 165, 1) 52%,
+      rgba(149, 43, 233, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      20deg,
+      rgba(232, 214, 46, 1) 10%,
+      rgba(211, 45, 165, 1) 52%,
+      rgba(149, 43, 233, 1) 100%
+    );
+    background: linear-gradient(
+      20deg,
+      rgba(232, 214, 46, 1) 10%,
+      rgba(211, 45, 165, 1) 52%,
+      rgba(149, 43, 233, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e8d62e",endColorstr="#952be9",GradientType=1);
+  }
+
+  .navigation-link-shop {
+    padding: 10px 20px;
+    background-color: #1f9ea7;
+    border-radius: 20px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-content-btn a {
+    transition: all 0.4s;
+  }
+  .header-content-btn:hover {
+    background-color: #232323;
+    color: #ededed;
+  }
+  .header-content-btn:hover a {
+    color: #ededed;
+  }
+
+  .navigation-link {
+    position: relative;
+  }
+
+  .navigation-link:not(.navigation-link-shop)::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    background-color: #fff;
+    width: 0;
+    height: 2px;
+    transition: all 0.3s;
+  }
+  .navigation-link:hover::after {
+    width: 35%;
+  }
+  .navigation-link-shop {
+    transition: all 0.4s;
+  }
+  .navigation-link-shop:hover {
+    background-color: #ededed;
+  }
+  .navigation-open .navigation-list .navigation-link-shop:hover {
+    color: #232323;
+  }
+}
+
+@media (1350px <= width) {
+  .header img {
+    right: -100px;
+  }
+}
+@media (1400px <= width) {
+  .header img {
+    right: 0px;
+  }
+}
+@media (1500px <= width) {
+  .navigation-open .navigation-list .navigation-link {
+    font-size: 25px;
+  }
+  .header-content-title {
+    font-size: 70px;
+  }
+
+  .header-content {
+    top: 30%;
   }
 }
