@@ -392,7 +392,7 @@ body {
   }
 
   .navigation-link-shop {
-    padding: 10px 20px;
+    padding: 8px 20px;
     background-color: #1f9ea7;
     border-radius: 20px;
     width: 120px;
@@ -460,5 +460,20 @@ body {
 
   .header-content {
     top: 30%;
+  }
+}
+
+@media (1920px <= width) {
+  .header {
+    padding: 50px 70px;
+  }
+
+  .header img {
+    width: 850px;
+  }
+
+  .header-content {
+    padding-left: 70px;
+    max-width: 900px;
   }
 }
