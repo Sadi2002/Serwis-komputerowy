@@ -410,9 +410,40 @@ body {
     width: 200px;
     height: 55px;
   }
+  .header-content-description {
+    max-width: 1000px;
+    margin: 0 auto 75px;
+  }
+  .header-content-title {
+    max-width: 1000px;
+    margin: 0 auto 35px;
+  }
+  .navigation-link-shop {
+    padding: 8px 20px;
+    background-color: #1f9ea7;
+    border-radius: 20px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .history-subtitle {
+    text-align: left;
+  }
+  .history-title {
+    margin: 0 0 100px;
+    text-align: left;
+  }
+  .our-history {
+    padding: 80px 50px;
+  }
 }
 
 @media (1200px <= width) {
+  .history-title {
+    font-size: 55px;
+    max-width: 800px;
+  }
   .navigation-open {
     padding-top: 0;
   }
@@ -443,7 +474,7 @@ body {
   }
   .header-content-description {
     font-size: 24px;
-    max-width: 650px;
+    max-width: 100%;
     margin-bottom: 55px;
   }
   .header-content-btn {
@@ -480,16 +511,6 @@ body {
       rgba(149, 43, 233, 1) 100%
     );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e8d62e",endColorstr="#952be9",GradientType=1);
-  }
-
-  .navigation-link-shop {
-    padding: 8px 20px;
-    background-color: #1f9ea7;
-    border-radius: 20px;
-    width: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .header-content-btn a {
@@ -529,6 +550,32 @@ body {
   .navigation-open .navigation-list .navigation-link-shop:hover {
     color: #232323;
   }
+  .history-box h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .history-description {
+    font-size: 20px;
+  }
+  .history-subtitle {
+    font-size: 20px;
+  }
+  .history-box-square {
+    width: 120px;
+    height: 120px;
+    top: -60px;
+  }
+  .history-box {
+    padding-top: 90px;
+    margin-bottom: 100px;
+  }
+  .history-title {
+    margin-bottom: 120px;
+  }
+  .history-box-square img {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media (1350px <= width) {
@@ -551,6 +598,9 @@ body {
 
   .header-content {
     top: 30%;
+  }
+  .history-box {
+    width: 32%;
   }
 }
 
