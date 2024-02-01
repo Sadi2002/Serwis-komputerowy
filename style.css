@@ -315,12 +315,14 @@ body {
 }
 
 .costs {
-  padding: 0 25px 50px;
+  padding: 0 25px 80px;
 }
 
 .costs-box {
   width: 100%;
   padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
 
   border: 1px solid #ddbc4a;
   border-radius: 40px;
@@ -347,7 +349,7 @@ body {
 
 .costs-level {
   position: absolute;
-  top: -20px;
+  top: -25px;
   left: 50%;
   transform: translateX(-50%);
   height: 50px;
@@ -586,7 +588,7 @@ body {
   }
 
   .costs {
-    padding: 60px 50px 0;
+    padding: 30px 50px 0;
   }
 }
 
