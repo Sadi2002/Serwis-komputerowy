@@ -23,12 +23,18 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900;1000&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <div class="container">
+    <div class="wrapper">
       <header class="header">
         <nav class="navigation">
-          <h2 class="navigation-logo">Logo</h2>
+          <img class="nav-logo" src="logo.svg" alt="logo" />
           <div class="navigation-bar">
             <div class="navigation-circle"></div>
             <div class="navigation-bar--middle"></div>
@@ -129,8 +135,274 @@
             </div>
           </div>
         </section>
+        <section class="costs">
+          <span class="costs-subtitle">Najlepsze ceny</span>
+          <h2 class="costs-title">Cennik Naszych Profesjonalnych Rozwiązań</h2>
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="costs-box">
+                  <div class="costs-level">Podstawowy</div>
+                  <p class="costs-description">
+                    Pakiet idealny dla tych, którzy potrzebują solidnej pomocy
+                    bez nadmiernych kosztów.
+                  </p>
+                  <h3 class="costs-cost">Od 100zł / brutto</h3>
+                  <span class="cost-time">za miesiąc</span>
+                  <div class="costs-packs">
+                    <div class="costs-pack">
+                      <img src="check.svg" alt="znaczek akceptacji" />
+                      <p class="costs-pack-desciption">
+                        Diagnostyka i naprawa podstawowych problemów sprzętowych
+                        i programowych.
+                      </p>
+                    </div>
+                    <div class="costs-pack">
+                      <img src="check.svg" alt="znaczek akceptacji" />
+                      <p class="costs-pack-desciption">
+                        Instalacja i konfiguracja oprogramowania.
+                      </p>
+                    </div>
+                    <div class="costs-pack">
+                      <img src="check.svg" alt="znaczek akceptacji" />
+                      <p class="costs-pack-desciption">
+                        Porady i wsparcie techniczne drogą telefoniczną lub
+                        online.
+                      </p>
+                    </div>
+                    <div class="costs-pack">
+                      <img src="check.svg" alt="znaczek akceptacji" />
+                      <p class="costs-pack-desciption">
+                        Aktualizacje oprogramowania i zabezpieczeń.
+                      </p>
+                    </div>
+                    <div class="costs-pack costs-pack-disabled">
+                      <img src="close.svg" alt="znaczek akceptacji" />
+                      <p class="costs-pack-desciption">
+                        Szybki czas reakcji i priorytetowe wsparcie techniczne.
+                      </p>
+                    </div>
+                    <div class="costs-pack costs-pack-disabled">
+                      <img src="close.svg" alt="znaczek akceptacji" />
+                      <p class="costs-pack-desciption">
+                        Usuwanie wirusów i malware'u.
+                      </p>
+                    </div>
+                    <div class="costs-pack costs-pack-disabled">
+                      <img src="close.svg" alt="znaczek akceptacji" />
+                      <p class="costs-pack-desciption">
+                        Priorytetowe wsparcie techniczne 24/7.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="costs-box">
+                  <div class="costs-level">Podstawowy</div>
+                  <p class="costs-description">
+                    Pakiet idealny dla tych, którzy potrzebują solidnej pomocy
+                    bez nadmiernych kosztów.
+                  </p>
+                  <h3 class="costs-cost">Od 100zł / brutto</h3>
+                  <span class="cost-time">za miesiąc</span>
+                  <div class="costs-packs">
+                    <div class="costs-pack">
+                      <img src="check.svg" alt="znaczek akceptacji" />
+                      <p class="costs-pack-desciption">
+                        Diagnostyka i naprawa podstawowych problemów sprzętowych
+                        i programowych.
+                      </p>
+                    </div>
+                    <div class="costs-pack">
+                      <img src="check.svg" alt="znaczek akceptacji" />
+                      <p class="costs-pack-desciption">
+                        Instalacja i konfiguracja oprogramowania.
+                      </p>
+                    </div>
+                    <div class="costs-pack">
+                      <img src="check.svg" alt="znaczek akceptacji" />
+                      <p class="costs-pack-desciption">
+                        Porady i wsparcie techniczne drogą telefoniczną lub
+                        online.
+                      </p>
+                    </div>
+                    <div class="costs-pack">
+                      <img src="check.svg" alt="znaczek akceptacji" />
+                      <p class="costs-pack-desciption">
+                        Aktualizacje oprogramowania i zabezpieczeń.
+                      </p>
+                    </div>
+                    <div class="costs-pack costs-pack-disabled">
+                      <img src="close.svg" alt="znaczek akceptacji" />
+                      <p class="costs-pack-desciption">
+                        Szybki czas reakcji i priorytetowe wsparcie techniczne.
+                      </p>
+                    </div>
+                    <div class="costs-pack costs-pack-disabled">
+                      <img src="close.svg" alt="znaczek akceptacji" />
+                      <p class="costs-pack-desciption">
+                        Usuwanie wirusów i malware'u.
+                      </p>
+                    </div>
+                    <div class="costs-pack costs-pack-disabled">
+                      <img src="close.svg" alt="znaczek akceptacji" />
+                      <p class="costs-pack-desciption">
+                        Priorytetowe wsparcie techniczne 24/7.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="costs-box">
+                  <div class="costs-level">Podstawowy</div>
+                  <p class="costs-description">
+                    Pakiet idealny dla tych, którzy potrzebują solidnej pomocy
+                    bez nadmiernych kosztów.
+                  </p>
+                  <h3 class="costs-cost">Od 100zł / brutto</h3>
+                  <span class="cost-time">za miesiąc</span>
+                  <div class="costs-packs">
+                    <div class="costs-pack">
+                      <img src="check.svg" alt="znaczek akceptacji" />
+                      <p class="costs-pack-desciption">
+                        Diagnostyka i naprawa podstawowych problemów sprzętowych
+                        i programowych.
+                      </p>
+                    </div>
+                    <div class="costs-pack">
+                      <img src="check.svg" alt="znaczek akceptacji" />
+                      <p class="costs-pack-desciption">
+                        Instalacja i konfiguracja oprogramowania.
+                      </p>
+                    </div>
+                    <div class="costs-pack">
+                      <img src="check.svg" alt="znaczek akceptacji" />
+                      <p class="costs-pack-desciption">
+                        Porady i wsparcie techniczne drogą telefoniczną lub
+                        online.
+                      </p>
+                    </div>
+                    <div class="costs-pack">
+                      <img src="check.svg" alt="znaczek akceptacji" />
+                      <p class="costs-pack-desciption">
+                        Aktualizacje oprogramowania i zabezpieczeń.
+                      </p>
+                    </div>
+                    <div class="costs-pack costs-pack-disabled">
+                      <img src="close.svg" alt="znaczek akceptacji" />
+                      <p class="costs-pack-desciption">
+                        Szybki czas reakcji i priorytetowe wsparcie techniczne.
+                      </p>
+                    </div>
+                    <div class="costs-pack costs-pack-disabled">
+                      <img src="close.svg" alt="znaczek akceptacji" />
+                      <p class="costs-pack-desciption">
+                        Usuwanie wirusów i malware'u.
+                      </p>
+                    </div>
+                    <div class="costs-pack costs-pack-disabled">
+                      <img src="close.svg" alt="znaczek akceptacji" />
+                      <p class="costs-pack-desciption">
+                        Priorytetowe wsparcie techniczne 24/7.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
+
+<!-- <div class="costs-box">
+            <div class="costs-level">Podstawowy</div>
+            <p class="costs-description">
+              Pakiet idealny dla tych, którzy potrzebują solidnej pomocy bez
+              nadmiernych kosztów.
+            </p>
+            <h3 class="costs-cost">Od 100zł / brutto</h3>
+            <span class="cost-time">za miesiąc</span>
+            <div class="costs-packs">
+              <div class="costs-pack">
+                <img src="check.svg" alt="znaczek akceptacji" />
+                <p class="costs-pack-desciption">
+                  Diagnostyka i naprawa podstawowych problemów sprzętowych i
+                  programowych.
+                </p>
+              </div>
+              <div class="costs-pack">
+                <img src="check.svg" alt="znaczek akceptacji" />
+                <p class="costs-pack-desciption">
+                  Instalacja i konfiguracja oprogramowania.
+                </p>
+              </div>
+              <div class="costs-pack">
+                <img src="check.svg" alt="znaczek akceptacji" />
+                <p class="costs-pack-desciption">
+                  Porady i wsparcie techniczne drogą telefoniczną lub online.
+                </p>
+              </div>
+              <div class="costs-pack">
+                <img src="check.svg" alt="znaczek akceptacji" />
+                <p class="costs-pack-desciption">
+                  Aktualizacje oprogramowania i zabezpieczeń.
+                </p>
+              </div>
+              <div class="costs-pack costs-pack-disabled">
+                <img src="close.svg" alt="znaczek akceptacji" />
+                <p class="costs-pack-desciption">
+                  Szybki czas reakcji i priorytetowe wsparcie techniczne.
+                </p>
+              </div>
+              <div class="costs-pack costs-pack-disabled">
+                <img src="close.svg" alt="znaczek akceptacji" />
+                <p class="costs-pack-desciption">
+                  Usuwanie wirusów i malware'u.
+                </p>
+              </div>
+              <div class="costs-pack costs-pack-disabled">
+                <img src="close.svg" alt="znaczek akceptacji" />
+                <p class="costs-pack-desciption">
+                  Priorytetowe wsparcie techniczne 24/7.
+                </p>
+              </div>
+            </div>
+          </div> -->
