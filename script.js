@@ -12,8 +12,6 @@ const changeActiveMenu = () => {
 const addActiveToCarouselItem = () => {
   if (window.innerWidth >= 1200) {
     carouselItem.forEach((item) => item.classList.add("active"));
-  } else if (window.innerWidth < 1200) {
-    carouselItem.forEach((item) => item.classList.remove("active"));
   }
 };
 
