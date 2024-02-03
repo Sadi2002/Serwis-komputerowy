@@ -14,6 +14,10 @@ ul {
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 200vh;
   background-color: #232323 !important;
@@ -734,6 +738,34 @@ body {
   .costs-subtitle {
     font-size: 20px;
   }
+
+  .carousel-item.active {
+    margin-right: 0;
+  }
+
+  .carousel-inner {
+    display: flex;
+  }
+  .carousel-item.active:not(:last-of-type) {
+    margin-right: 30px;
+  }
+  .carousel-indicators {
+    display: none !important;
+  }
+  .costs {
+    padding: 30px 50px 50px;
+  }
+  .costs-box {
+    transition: all 0.3s;
+    max-width: 450px;
+  }
+
+  .costs-box:hover {
+    transform: scale(1.05);
+  }
+  .costs-description {
+    font-size: 18px;
+  }
 }
 
 @media (1350px <= width) {
@@ -759,6 +791,9 @@ body {
   }
   .history-box {
     width: 32%;
+  }
+  .costs-box {
+    max-width: 550px;
   }
 }
 
