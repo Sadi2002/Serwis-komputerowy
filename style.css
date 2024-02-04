@@ -16,12 +16,14 @@ ul {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   min-height: 200vh;
   background-color: #232323 !important;
   font-family: "Nunito", sans-serif !important;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -425,7 +427,7 @@ body {
 }
 
 .costs-pack-desciption {
-  color: #ededed;
+  color: #fff;
   font-size: 13px;
   margin-bottom: 0;
 }
