@@ -530,8 +530,7 @@ body {
 .footer .hours span {
   transition: all 0.3s;
 }
-.footer .contact-item a:hover,
-.footer .hours span:hover {
+.footer .contact-item a:hover {
   color: #ddbc4a;
 }
 
@@ -564,6 +563,38 @@ iframe {
 
 .costs {
   padding-top: 40px;
+}
+
+.back-to-top {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ddbc4a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  opacity: 0;
+}
+.back-to-top img {
+  transition: all 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: #ddbc4a;
+}
+.back-to-top:hover img {
+  filter: brightness(0);
+}
+
+.back-to-top.show {
+  opacity: 1;
+}
+
+.back-to-top img {
+  width: 40px;
 }
 /* Responsywność */
 
@@ -1012,6 +1043,19 @@ iframe {
   }
   .footer iframe {
     width: 100%;
+  }
+
+  .back-to-top {
+    top: 50px;
+    right: 50px;
+  }
+
+  .shop img {
+    transition: all 0.3s;
+  }
+
+  .shop img:hover {
+    transform: scale(1.05);
   }
 }
 
