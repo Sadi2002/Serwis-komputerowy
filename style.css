@@ -1082,6 +1082,10 @@ iframe {
   .shop img:hover {
     transform: scale(1.05);
   }
+
+  .costs-description {
+    text-align: left;
+  }
 }
 
 @media (1350px <= width) {
