@@ -609,7 +609,19 @@ iframe {
 .slide-1 {
   margin-bottom: 150px;
 }
+
 /* Responsywność */
+
+@media (width <= 991px) {
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact {
+    order: 3;
+  }
+}
 
 @media (375px <= width) {
   .header-content-title {
