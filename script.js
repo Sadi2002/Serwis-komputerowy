@@ -19,7 +19,7 @@ const addActiveToCarouselItem = () => {
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > 750 && window.innerWidth < 1500) {
     scrollTopIcon.classList.add("show");
-  } else if (window.pageYOffset > 50 && window.innerWidth > 1500) {
+  } else if (window.pageYOffset > 950 && window.innerWidth > 1500) {
     scrollTopIcon.classList.add("show");
   } else {
     scrollTopIcon.classList.remove("show");
