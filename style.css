@@ -526,6 +526,15 @@ body {
   color: #fff;
 }
 
+.footer .contact-item a,
+.footer .hours span {
+  transition: all 0.3s;
+}
+.footer .contact-item a:hover,
+.footer .hours span:hover {
+  color: #ddbc4a;
+}
+
 .map {
   margin-bottom: 30px;
 }
@@ -544,6 +553,17 @@ iframe {
   color: #a9a9a9;
   font-weight: 300;
   font-size: 16px;
+}
+
+.history-box {
+  margin-bottom: 40px;
+}
+.history-box:not(:last-child) {
+  margin-bottom: 85px;
+}
+
+.costs {
+  padding-top: 40px;
 }
 /* Responsywność */
 
@@ -578,6 +598,9 @@ iframe {
   }
   .header-content-btn a {
     font-size: 18px;
+  }
+  iframe {
+    height: 300px;
   }
 }
 
@@ -753,6 +776,28 @@ iframe {
   .go-to-shop-desktop:hover {
     background-color: #ededed;
     color: #353535;
+  }
+
+  .footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer .contact {
+    order: 3;
+  }
+
+  .footer iframe {
+    height: 200px;
+  }
+  .footer .contact-item a {
+    font-size: 17px;
+  }
+  .copyright p {
+    font-size: 18px;
+  }
+  .footer {
+    padding: 70px 50px 20px;
   }
 }
 
@@ -962,6 +1007,12 @@ iframe {
     align-items: flex-end;
     gap: 30px;
   }
+  .map {
+    width: 40%;
+  }
+  .footer iframe {
+    width: 100%;
+  }
 }
 
 @media (1350px <= width) {
@@ -1003,6 +1054,30 @@ iframe {
   .shop-title {
     max-width: 800px;
   }
+  .footer .hours h3,
+  .footer .contact h3 {
+    font-size: 28px;
+  }
+
+  .footer .contact-item a,
+  .footer .hours span {
+    font-size: 20px;
+  }
+  .copyright p {
+    font-size: 20px;
+  }
+
+  .map {
+    width: 45%;
+  }
+
+  .map iframe {
+    height: 230px;
+  }
+
+  .footer .footer-top {
+    margin-bottom: 20px;
+  }
 }
 
 @media (1920px <= width) {
@@ -1041,5 +1116,9 @@ iframe {
   .shop-description {
     font-size: 18px;
     line-height: 35px;
+  }
+
+  .map {
+    width: 50%;
   }
 }
