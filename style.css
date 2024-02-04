@@ -577,6 +577,7 @@ iframe {
   top: 20px;
   right: 20px;
   opacity: 0;
+  visibility: hidden;
 }
 .back-to-top img {
   transition: all 0.3s;
@@ -591,6 +592,7 @@ iframe {
 
 .back-to-top.show {
   opacity: 1;
+  visibility: visible;
 }
 
 .back-to-top img {
