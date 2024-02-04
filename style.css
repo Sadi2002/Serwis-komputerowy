@@ -580,6 +580,7 @@ iframe {
   right: 20px;
   opacity: 0;
   visibility: hidden;
+  z-index: 9999999;
 }
 .back-to-top img {
   transition: all 0.3s;
@@ -599,6 +600,14 @@ iframe {
 
 .back-to-top img {
   width: 40px;
+}
+
+#carouselExampleIndicators1 .costs-box {
+  min-height: 570px;
+}
+
+.slide-1 {
+  margin-bottom: 150px;
 }
 /* Responsywność */
 
