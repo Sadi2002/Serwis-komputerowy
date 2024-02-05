@@ -4,6 +4,7 @@ const navigationMobile = document.querySelector(".navigation");
 const closeMobileMenu = document.querySelector(".close-btn");
 const carouselItem = document.querySelectorAll(".carousel-item");
 const scrollTopIcon = document.querySelector(".back-to-top");
+const navigationMenuLinks = document.querySelectorAll(".navigation-link");
 
 const changeActiveMenu = () => {
   navigationBar.classList.toggle("active");
@@ -25,6 +26,15 @@ window.addEventListener("scroll", () => {
     scrollTopIcon.classList.remove("show");
   }
 });
+
+navigationMenuLinks.forEach((link) =>
+  link.addEventListener("click", () => {
+    if (window.innerWidth < 992) {
+      navigationBar.classList.remove("active");
+      navigationMobile.classList.remove("active");
+    }
+  })
+);
 
 addActiveToCarouselItem();
 
