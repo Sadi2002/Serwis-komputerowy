@@ -25,6 +25,10 @@ window.addEventListener("scroll", () => {
   } else {
     scrollTopIcon.classList.remove("show");
   }
+  if (window.pageYOffset > 400) {
+    navigationBar.classList.remove("active");
+    navigationMobile.classList.remove("active");
+  }
 });
 
 navigationMenuLinks.forEach((link) =>
