@@ -621,6 +621,10 @@ iframe {
   .contact {
     order: 3;
   }
+  .carousel-item {
+    margin-right: -90% !important;
+    transition: transform 0.4s linear !important;
+  }
 }
 
 @media (375px <= width) {
